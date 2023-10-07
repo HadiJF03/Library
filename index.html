@@ -13,8 +13,8 @@
 </head>
 <body>
     <div class="popup hidden">
-        New Book
-        <div>
+        <div class="popup-title">New Book</div>
+        <div class="inputs">
             <div class="input">
                 Title
                 <input id="title">
@@ -30,7 +30,10 @@
                 <input id="pages">
             </div>
         </div>
-        <button class="submit">Create Book</button>
+        <div class="form-buttons">
+            <button class="submit clickable">Create Book</button>
+            <button class="cancel clickable">Cancel</button>
+        </div>
     </div>
 
     <div class="container">
@@ -40,10 +43,22 @@
             </div>
         </div>
         <div class="library">
+            <div class="book">
+                <div class="accent"></div>
+                <div class="book-info">
+                    <div class="book-title">Title: fgdf</div>
+                    <div class="book-author">Author: e</div>
+                    <div class="book-pages">Pages: 10</div>
+                    <div class="book-controls">
+                        <button class="clickable remove-button">Remove</button>
+                        <button class="clickable read-button">Read</button>
+                    </div>
+                </div>
+            </div>
             <div class="book" id="new">
                 <div class="accent"></div>
                 <div class="book-info">
-                    <button class="new-book"><p>+<p></button>
+                    <button class="new-book clickable"><p>+<p></button>
                 </div>
             </div>
         </div>  
