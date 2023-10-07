@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer async></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="popup hidden">
+        New Book
+        <div>
+            <div class="input">
+                Title
+                <input id="title">
+            </div>
+
+            <div class="input">
+                Author
+                <input id="author">
+            </div>
+
+            <div class="input">
+                Pages
+                <input id="pages">
+            </div>
+        </div>
+        <button class="submit">Create Book</button>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <div class="title">
+            My Reading Library
+            </div>
+        </div>
+        <div class="library">
+            <div class="book" id="new">
+                <div class="accent"></div>
+                <div class="book-info">
+                    <button class="new-book"><p>+<p></button>
+                </div>
+            </div>
+        </div>  
+        <div class="footer"></div>
+    </div>
+
+</body>
+</html>

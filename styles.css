@@ -1,0 +1,130 @@
+html, body{
+    width: 100vw;
+    height: 100vh;
+    
+}
+*{
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.header, .footer{
+    display: flex;
+    background-color: #1f2937;
+    color: white;
+    height: 10vh;
+    width: 100vw;
+    justify-content: center;
+
+}
+.title{
+    font-size:xx-large;
+    text-align: center;
+    align-self: center;
+}
+.library{
+    padding: 50px;
+    display: grid;
+    background-color: #9ca3af;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100%;;
+    gap:20px;
+}
+.book{
+    color: white;
+    background-color: #44403c;
+    height:300px;
+    width:100%;
+    border-radius: 0 10px 10px 0;
+    box-shadow: -3px 15px 10px -8px rgba(0, 0, 0, 0.397);
+    display: grid;
+    grid-template-columns: 10px auto;
+    grid-template-rows: 1fr;
+}
+.accent{
+    background-color: #52525b;
+}
+.book-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: larger;
+    padding: 20px;
+}
+#new>.book-info{
+    display: flex;
+    align-items: center;
+}
+.new-book{
+    border: none;
+    border-radius: 50%;
+    width:100px;
+    height:100px;
+    background-color: #52525bbb;
+    color: white;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    background-color: #1f2937;
+}
+
+.popup{
+    text-shadow: 6px 3px 2px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    padding: 50px 10px;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+    font-size: larger;
+
+    color:white;
+    background-color: #52525b;
+    height: 25vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 7px 7px 10px 1px rgba(0,0,0,0.68);
+}
+.input{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.input>input{
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.68) inset;
+    width: 50vw;
+    padding: 6px;
+    color: white;
+    background-color: #44403c;
+    border: none;
+
+}
+.input>input:focus{
+    outline:none;
+    box-shadow: none;   
+}
+.popup>button{
+    margin-top: 20px;
+    padding: 5px;
+    background-color: #44403c;
+    color: white;
+   width: 50%;
+   font-size: larger;
+   align-self: flex-end;
+   border: none;
+   box-shadow: 2px 5px 10px 1px rgba(0,0,0,0.68);
+}
+.hidden{
+    visibility: hidden;
+}
